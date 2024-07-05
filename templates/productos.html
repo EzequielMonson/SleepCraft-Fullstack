@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleepCraft Productos</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="../static/scripts.js"></script>
+    <link rel="icon" href="../static/img/BEDSALE.png" type="image/x-icon">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="item header">
+            <nav class="header-nav">
+                <a href="/index">
+                    <img src="../static/img/BEDSALE.png" alt="" class="logo">
+                </a>
+                <ul class="nav-list">
+                    <li><a href="/contacto">Contacto</a></li> 
+                    <li><a href="/index">Main</a></li>
+                    <li><a href="/productos">Productos</a></li>
+                </ul>
+            </nav>
+            <div class="menu-btn">
+                <i class="bi bi-list" id="bi-list"></i>
+            </div>
+            <a href="#foot" class="a-header">SleepCraft</a>
+        </header>
+        <div class="overlay">
+            <div class="overlay-content">
+                <ul class="nav-list">
+                    <li><a href="/contacto">Contacto</a></li> 
+                    <li><a href="/index">Main</a></li>
+                    <li><a href="/productos">Productos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>   
+    <article class="botones">
+        <ul>
+            <li><button class="boton-con-imagen" id="agregarOpcionesCama"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABuklEQVR4nO3Yz6sOURzH8VeU61ddSmLBRlH2sqKs7GXH8voDpNjKxvUjdn5kSaxF2aEUyUpxs7FkQ0/yY4Hco6lD43meiXnmTnPmcd71qZnpzHc+n74z55yGTCaTyWQy08kKnMFbhMT1BvPR8wjzCRgMNXV6XJA+dCIMqfA8QuipRujaUA7y33XkHS5hDnuwCesxE++bieebsTeOu4z3LdcKdYLcwazJKO6721KtUDfIFs3Y2lKtUDfIUtBGrZCDJELosiOdBVnEPewfM2YNduEQjuI8ruM+XuJ1VDFdDvCpVPdzvDYojVvAA9zABRzDYezG2jHP34fb+PG3II+ws3RtFQ7EuXxhqEDbWsQrXMVBrC752o6HVUFOYHk83oYr+NjBSh0qVHT0GnZEj8twvOodXImz+JaA8VCh77g41KE/2IAnCRgN/6hn2DiuE48TMBdq6mn0/puTCZiaVKfKG7LyNNk3fYk7ZkcSMNNUc0WQWwkYaaqbRZAXCRhpqudFkA8JGGmqgbjAhJ7ra9XimOmSMCXStYEcRO6I/n4j5xr8HVxKZqOXiYOkEOIX65oESY2QgyRGmPqO/AQmwya75iPY4QAAAABJRU5ErkJggg==">Cama</button></li>
+            <li><button class="boton-con-imagen" id="agregarOpcionesColchon"><img id="img-colchon" src="https://icon-library.com/images/mattress-icon/mattress-icon-0.jpg" alt="">Colchón</button></li>
+            <li><button class="boton-con-imagen" id="agregarOpcionesAlmohada"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACqUlEQVR4nO2Z34sOURjHP+wiqy2vQuJmy4+b5VK0ruSWLVxRyqUrpYSkVlJCLtgLi/YPUJRiSy9ly6/Nqt2oLbyRwlpxIVmLfY8Oz3s6xsy845R9n9F869v7TueZM59vM+97zpwDhQoVKpRHzQZOAMNABegHzgBbgFKj4fjFYFm6ha0irMeF3ekkYBL8HbgLdAEdQHPMhRYBncAR4CJQBm4BgxHflLZLUtcL9ACngGPAIWCf+Ki0DwpDEp+9AU7DKYU1fwJ2A9PlnFZgFzAAVDOc/6885Ae5V6f4GbBSamcBe4H3DYQ3nu/4QXpSCkfk0bFqz3j3ptJn/SA7EoreAIulZgPwUQG4idiyOy1PKFov7euALwqgTYwtu9O0hB/sMqANGFUAbGJcFXan5oTCCWBcAbBJcVN0HDA59QI/yFoFQKFe4wfZpgAo1Jbd6aACoFAf8IOcVwAUajuYO5UVAIX6uh9kSAFQqB/6QSoKgEL91A/yTgFQqN/6QbTOo0wGf/4vg7xSABTq536QBwqAQm1ftZ0uKAAK9RU/yE4FQKE+5weZX2fJRdskcbt3vJ+IriqANBk8T3hfy7FduPtN7Tm5K5uFt0uOVxGjwwpATR3fFtY5wAugJS5Ik8wmTU5epjriQiyVT5vwhgJYk+LRtMV1O7Dske8z5BmcVABtsqww1lSSH/qkhKmtFXUqADYJtqyro0G2Ror6gIXACgXAJsUD3u7AT/XGFI3nZFa80Q/ySAFQqO2mkdNLBUChtq/pTtcyLBZXZDutT+rLskFkt8aeSPsY8EHWjJP6mpCaMTlnRPqw/Vlflv77ZYOp+jez3zbprNb4FXgMnAY2yTZbiFrkH7GUNAJnUKswdAvTN4/zvrD/IXvBJdEVbmWaKfBzGw1SqFAhpl4/AG1GYcSx2G9oAAAAAElFTkSuQmCC">Almohada</button></li>
+        </ul>
+    </article>
+    <main id="main-productos">
+        <section class="instrucciones">
+            <h1>Selecciona el producto que buscas.</h1>
+            <p>1. Elegí el tipo modelo.</p>
+            <p>2. Elegí el tamaño del producto.</p>
+            <p>3. Clickea el boton "Añadir al Carrito".</p>
+            <p>4. Una vez realizado tu pedido, tocá el Carrito y verificá tu compra.</p>
+            <p>5. Tocá el boton "Comprar" y rellena el formulario con tus datos.</p>
+        </section>
+    </main>
+    <button class="boton-carrito">
+            <img src="../static/img/carrito.png" alt="Carrito">
+    </button>
+    <div class="overlay-carrito">
+        <div class="overlay-carrito-content">
+            <h2>Carrito de Compras</h2>
+            <ul class="carrito-lista">
+                <!-- Acá agrego los productos del carrito -->
+            </ul>
+            <h4 id="precio-total"></h1>
+            <button class="cerrar-carrito">Cerrar</button>
+            <button id="comprar-btn" class="cerrar-carrito">Comprar</button>
+        </div>
+    </div>
+    <hr>
+    <footer class="footer" id="foot">
+        <div class="footer-contenedor-contactanos">
+            <h2>Contáctanos</h2>
+            <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Correo electrónico: <a href="mailto:sleepcraft666@gmail.com" class="a-footer">sleepcraft666@gmail.com</a></p>
+        </div>
+        <div class="footer-contenedor-siguenos">
+            <h2>Síguenos</h2>
+            <a href="https://www.facebook.com" target="_blank" class="a-footer">Facebook</a> |
+            <a href="https://www.twitter.com" target="_blank" class="a-footer">Twitter</a> |
+            <a href="https://www.instagram.com" target="_blank" class="a-footer">Instagram</a> |
+            <a href="https://www.linkedin.com" target="_blank" class="a-footer">LinkedIn</a> |
+            <br><br><br>
+            <a href="/integrantes" class="a-integrantes">©CopyRight Integrantes</a>
+        </div>
+      </footer>
+</body>
+
+</html>

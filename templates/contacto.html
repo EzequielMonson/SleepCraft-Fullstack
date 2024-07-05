@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleepCraft Contacto</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="../static/scripts.js"></script>
+    <link rel="icon" href="../static/img/BEDSALE.png" type="image/x-icon">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="item header">
+            <nav class="header-nav">
+                <a href="/index">
+                    <img src="../static/img/BEDSALE.png" alt="" class="logo">
+                </a>
+                <ul class="nav-list">
+                    <li><a href="/contacto">Contacto</a></li> 
+                    <li><a href="/index">Main</a></li>
+                    <li><a href="/productos">Productos</a></li>
+                </ul>
+            </nav>
+            <div class="menu-btn">
+                <i class="bi bi-list" id="bi-list"></i>
+            </div>
+            <a href="#foot" class="a-header">SleepCraft</a>
+        </header>
+        
+        <div class="overlay">
+            <div class="overlay-content">
+                <ul class="nav-list">
+                    <li><a href="/contacto">Contacto</a></li> 
+                    <li><a href="/index">Main</a></li>
+                    <li><a href="/productos">Productos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>     
+    <main>
+        <section class="section-contacto">
+            <h1 class="tittle-sc">SleepCraft</h1>
+            <img src="../static/img/contacto.png" alt="icono-contacto" class="icono-secciones">
+            <h2 class="contacto">Contacto</h2>
+            <form action="mailto:sleepcraft666@gmail.com" method="post" enctype="text/plain"id="formularioContacto">
+                <label for="contactoMotivo">MOTIVO*</label> 
+                <select name="motivo" id="motivoSelect">
+                    <option value="vacio"></option>
+                    <option value="contactoEntrega">Entrega</option>
+                    <option value="contactoFactura">Factura</option>
+                    <option value="contactoCompra">Compra</option>
+                    <option value="contacto">Garantía</option>
+                    <option value="contacto" >Otros</option>
+                </select> 
+                <br>
+
+                <label for="contactoNombre">NOMBRE*</label>
+
+                <input type="text" name="nombre" id="nombre" maxlength="25" >
+                <br>
+
+                <label for="contactoApellido">APELLIDO*</label>
+
+                <input type="text" name="apellido" id="apellido" maxlength="25" >
+                <br>
+
+                <label for="contactoDNI">DNI*</label>
+
+                <input type="text" name="dni" id="dni" maxlength="8" >
+                <br>
+
+                <label for="contactoTelefono">TELEFONO*</label>
+
+                <input type="text" name="telefono" id="telefono" maxlength="12" >
+                <br>
+
+                <label for="contactoEmail">EMAIL*</label>
+
+                <input type="email" name="email" id="email" >
+                <br>
+
+                <label for="contactoProvincia">PROVINCIA*</label>
+
+                <input type="text" name="provincia" id="provincia" >
+                <br>
+
+                <label for="contactoComentario">COMENTARIO*</label>
+
+                <textarea name="comentario" id="comentario" rows="5" cols="50" ></textarea>
+
+                <button class="boton-contactos">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer class="footer" id="foot">
+        <div class="footer-contenedor-contactanos">
+            <h2>Contáctanos</h2>
+            <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Correo electrónico: <a href="mailto:sleepcraft666@gmail.com" class="a-footer">sleepcraft666@gmail.com</a></p>
+        </div>
+        <div class="footer-contenedor-siguenos">
+            <h2>Síguenos</h2>
+            <a href="https://www.facebook.com" target="_blank" class="a-footer">Facebook</a> |
+            <a href="https://www.twitter.com" target="_blank" class="a-footer">Twitter</a> |
+            <a href="https://www.instagram.com" target="_blank" class="a-footer">Instagram</a> |
+            <a href="https://www.linkedin.com" target="_blank" class="a-footer">LinkedIn</a> |
+            <br><br><br>
+            <a href="/integrantes" class="a-integrantes">©CopyRight Integrantes</a>
+        </div>
+      </footer>
+</body>
+</html>

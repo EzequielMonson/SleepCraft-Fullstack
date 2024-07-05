@@ -1,0 +1,847 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+body {
+    background-image: linear-gradient(to top, #d2f0e0 1%, #5e9393 99%) !important;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url();
+}
+
+header {
+    background-color: #164564;
+    width:100%;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+} 
+
+footer {
+
+    display: flex;
+    justify-self: flex-end;
+    background-color: #306b6b !important;
+}
+h2 {
+    margin-top: 10% !important;
+}
+
+.contacto{
+    margin-top: 2% !important;
+}
+
+/* carrusel Main*/
+.seccion-carousel{
+    background-color:#5e9393 ;
+    margin: 0;
+}
+#carouselExampleCaptions{
+    display: flex;
+    height: 70%;
+    margin: 0 5% 10% 5%;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.23);
+}
+.carousel-control-prev, .carousel-control-next{
+    display: flex;
+    align-self: center;
+}
+
+#contenedor-btn-sesion {
+    display: flex;
+    align-items: center;
+}
+.btn-nav{
+    padding: 2em;
+    display: flex;
+    white-space: nowrap;
+    background-color: #306b6b !important;
+}
+
+#bi-list{
+    font-size: 2.25em;
+}
+.logo{
+    display: flex;
+    height: 100px;
+    width: 100px;
+}
+a{
+    margin: 0 0 0 10%;
+    
+}
+/* Estilos para la lista de navegación en el encabezado */
+.header-nav {
+    display: flex; 
+    align-items: center;
+    
+}
+main {
+    flex: 1; /* Esto hace que el contenido principal se expanda para llenar el espacio disponible */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+/* Estilos para la lista de opciones del usuario */
+.user-options {
+    display: none;
+    position: absolute;
+    top: 0.5em;
+    right: -4px;
+    width: 16em;
+    background-color: #164564;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    list-style-type: none;
+    z-index: 1;
+    padding-left: 0px;
+}
+
+.user-options.show {
+    display: block;
+}
+.user-name {
+    color: white;
+    font-size: larger;
+    font-weight: 400;
+}
+.user-options li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.user-options li:last-child {
+    border-bottom: none;
+}
+
+.user-options a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.user-options li:hover {
+    background-color: #f0f0f0;
+}
+.user-options li:hover a {
+    color: #333;
+    font-weight: 600;
+}
+
+.options-container {
+    position: relative;
+}
+
+.options-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.btn-nav {
+    background-color: #4caf50;
+    color: white;
+    padding: 2% 2%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-nav ul {
+    display: flex;   /*esto creo q no hace nada */
+    justify-content: flex-start;
+    align-items: end;
+    align-content: space-between;
+    list-style: none; 
+    
+    margin: 0; 
+}
+
+.header-nav li {
+    display: inline; 
+    margin-left: 40px;  
+}
+
+.header-nav a {
+    text-decoration: none !important; /* Quita el subrayado del enlace */
+    color: white; 
+    font-size: 18px;  /*cambio*/
+    font-weight: 545;
+}
+a:hover {
+    color: inherit !important; /* Mantiene el color original del elemento */
+    text-decoration: none !important; /* Opcional: elimina el subrayado al pasar el mouse */
+    color: white !important;
+}
+
+
+/* Sección de botones */
+.botones {
+    background-color: #1a4a5abb;
+    margin: 0;
+}
+
+.botones ul {
+    list-style: none;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #1a4a5a00;
+}
+.boton-con-imagen {
+    flex: 1;
+    display: flex;
+    background-color: #16456448;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 0.5em 1em; 
+    border-radius: 5px;
+    width: 12vw; 
+    height: 13vh; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 0 groove rgba(255, 255, 255, 0.868); 
+    
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+.boton-con-imagen img {
+    
+    height: 50px;
+    
+}
+.img-colchon {
+    width: 1000px;
+    height: 1000px;
+    padding: 0;
+}
+button {
+    display: flex;
+    background-color: #3b94cf;
+    color: white;
+    font-weight: 700;
+    padding: 0.5em 1em; 
+    border-radius: 0;
+    border: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+.boton-contactos{
+    height: 4rem;
+    margin-top: 8%;
+    box-shadow: 0 0 4px #00385e;
+}
+#btn-agregar-carrito{
+    max-width: 150px;
+    max-height: 70px;
+    min-height: 60px;
+    margin: 7%;
+}
+
+
+
+/*seccion carrito */
+.boton-carrito {
+    position: fixed;
+    bottom: 4%; /* Ajusta la distancia desde el borde inferior de la ventana */
+    right: 2%; /* Ajusta la distancia desde el borde derecho de la ventana */
+    z-index: 999; /* Ajusta la capa z para asegurar que esté por encima de otros elementos */
+    display: flex;
+    width: 5.25em;
+    height: 10%;
+    background-color: #164564;
+    border-radius: 50%;
+    border: 1.5px solid rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+.boton-carrito img {
+    height: 130%;
+}
+.overlay-carrito {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: auto;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.456);
+    transition: right 0.3s ease;
+    z-index: 999;
+    color: #fff;
+    padding: 20px;
+}
+
+.overlay-carrito.active {
+    right: 0;
+}
+
+.overlay-carrito-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color:black;
+    font-weight: 500;
+}
+
+.carrito-lista {
+    flex-grow: 1;
+    overflow-y: auto;
+    list-style-type: none; 
+}
+
+.cerrar-carrito {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.radio-tipos{
+    margin-left: 0;
+}
+
+
+
+.item section {
+    background-color: #81d4fa;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+/* Estilos para el contenedor de navegación transparente cuando está abierto */
+.overlay.active {
+    width: 50%;
+}
+
+/* Estilos para la animación de desplazamiento del contenedor transparente */
+.overlay-content {
+    width: 100%;
+    transition: margin-left 0.5s;
+}
+
+/* Cards */
+.cards-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top, #d2f0e0 1%, #5e9393 99%);
+}
+
+.content-cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-bottom: 5%;
+}
+
+.card{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #16456448 !important;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+    
+}
+
+
+.card img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 2% 0; /* Añade margen para separar la imagen del texto */
+}
+
+.card p{
+    font-weight: 300;
+    font-size: 25px;
+    
+    color: white !important;
+}
+.titulo-card{
+    color: white;
+    margin-top: 2%;
+}
+.button-card{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #164564;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    color: #fff;
+    margin: 0 !important;
+}     
+    /*_CONTACTO_*/
+
+
+
+.section-contacto{
+    background-color: #e7eee7;
+    height: 90h;        /*90 porque sino se rompia con el footer*/
+    min-width: 60%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
+}
+form, label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: 600;
+    width: 90%;
+}
+#comentario{
+    resize: vertical !important;   /*hace que el textarea solo se pueda midificar de forma vertical*/
+}
+
+
+.tittle-sc{
+    font-size: 37px;
+    font-weight: 750;
+}
+
+input {
+    border: 0;
+    height: 30px;
+    width: 100%;
+}
+textarea{
+    border: 0;
+}
+select{
+    border: 0;
+    height: 30px;
+}
+
+
+hr{
+    position: relative;
+    margin: 1% 5%-2% 5% !important;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.319) !important;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.a-footer{
+    color: white;
+    text-decoration: underline;
+    margin: 0;
+}
+
+/* Etiqueta del header que dice sleepcraft */
+.a-header{
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/*Estilos productos*/
+
+#main-productos{
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-content: normal;
+    
+
+}
+.opciones-tipo{
+    display: flex;
+    justify-content: space-around;
+    /*Saque un align item*/
+    flex-direction: column;
+    max-width: 230px;/*agregue estas medidas*/
+    margin: 1.5%;
+}
+#opcion-tipo{
+    flex-direction: row;
+}
+.boton-seleccionado {
+    background-color: #FFD700; /* Color de fondo para el botón seleccionado */
+}
+
+.contenedor-modificaciones{
+    margin: 10% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content:space-around;
+    flex-direction: row;
+    background-color: #16456400;
+    font-size: x-large;
+    margin: 0;
+}
+.instrucciones{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 5% 4.3%;
+    font-size: x-large;
+}
+
+.icono-secciones{
+    width: 7%; 
+    height: 7%;
+}
+
+
+/* Sección de integrantes del grupo */
+
+.div-integrantes{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.section-integrantes{
+    background-image: radial-gradient(circle at top, rgb(66, 145, 145) 1%, rgba(32, 73, 73, 0.966) 99%);
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    transform: scale(1);
+    transition: transform 0.6s; 
+    margin: 3% 0 5%;
+    flex-direction: column;
+    text-align: left;
+    padding: 2%;
+    border-radius: 7px;
+}
+#main-integrantes{
+    display: flex;
+    align-content: space-around;
+}
+.section-integrantes:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.git-icon{
+    margin: 0 0 1% 3%;
+}
+.git-icon i{
+    font-size: 250%;
+    color: black;
+}
+.git-icon:visited {
+    color: inherit; /* O el mismo color que usaste para enlaces normales */
+    text-decoration: none; /* Esto es opcional si no quieres subrayado */
+}
+.pal-integrantes{
+    margin: 2% 3% !important;
+}
+.a-integrantes{
+    color: white;
+}
+/*Seccion compras*/
+#listado-productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex:3;
+    justify-content: space-around;
+}
+
+/* Para pantallas más grandes */
+@media (min-width: 769px) {
+    
+    .overlay {
+        display: none; /* Ocultar la sección de navegación en pantallas más grandes */
+    }
+    
+    .header-nav .nav-list {
+        display: flex; /* Mostrar la lista de navegación en pantallas más grandes */
+        padding: 1%;
+    }
+   
+    .menu-btn {
+        display: none; /* Ocultar el botón de menú en pantallas más grandes */
+        
+    }
+
+
+    .contenedor-modificaciones {
+        display: flex; /* Mostrar el contenedor de modificaciones en pantallas más grandes */
+    }
+
+    .btn-agregar {
+        display: none; /* Ocultar el botón "Agregar al carrito" en pantallas más grandes */
+    }
+
+
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header-nav .nav-list {
+        display: none; 
+    }
+    #carouselExampleCaptions{
+        margin: 0;
+    }
+    .boton-con-imagen {
+        width: 8em; 
+        height: 9em; 
+        font-size: 1em;
+    }
+    .botones ul {
+        margin:0;
+    }
+    
+    .botones li {
+        display: inline-block;
+        text-align: center; 
+    }
+    button {
+        width: 100%; 
+        padding: 15px; 
+        margin-bottom: 10px; 
+    }
+    .menu-btn {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: 0% 16% 0 5%;
+    }
+    .menu-btn i {
+        color: beige;
+        font-size: 2.25em;
+    }
+
+    .opciones-tipo{
+        max-width: none;
+    }
+
+    .contenedor-modificaciones {
+        padding: 10px; /* Añadir relleno adicional */
+    }
+    .btn-agregar {
+        width: 50px; 
+        height: 50px; 
+        border-radius: 50%; 
+        padding: 0; 
+        margin-bottom: 10px; 
+        background-color: transparent;
+        background-image: url('/templates/img/carrito.png'); 
+        background-size: cover; 
+        background-position: center;
+        text-indent: -9999px;
+    }
+    /* Estilos para el contenedor transparente */
+    .overlay {
+        height: 100%;
+        width: 0%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5); 
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+     /* Cards */
+    .titulo-card{
+        margin-top: 7%;
+    }
+    .card{
+        width: 90% !important;
+    }
+    .content-cards{
+        flex-direction: column;
+        align-items: center; 
+        align-content: space-between;
+    }
+    /* Estilos para el contenido del contenedor transparente */
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay-content .nav-list {
+        padding: 0;
+    }
+
+    .overlay-content .nav-list li {
+        margin-bottom: 20px;
+    }
+    .overlay-content .nav-list a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+    form{
+        padding: 5%;
+    }
+    .section-contacto{
+        width: 100%;
+        justify-content: space-between;
+    }
+    form, label {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-weight: 600;
+        width: 100%;
+    }
+    .section-iniciar-sesion{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer{
+        flex-wrap: wrap;
+    }
+    .footer-contenedor-siguenos{
+        margin-bottom: 5%;
+    }
+    .boton-carrito {
+        width: 5.25em;
+        bottom: 2%;
+        right:2%;
+    }
+    .boton-carrito img {
+        height: 140%;
+    }
+    .overlay-carrito{
+        right: -150%;
+    }
+    .icono-secciones{
+        width: 12%; 
+        height: 12%;
+    }
+    .section-integrantes{
+        width: 100%;
+    }
+    .div-integrantes{
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .botones ul {
+        list-style: none;
+        margin: 0;
+        padding: 1%;
+        display: flex;
+        flex-wrap: wrap; /*crear nueva fila*/
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .boton-con-imagen {
+        flex: 1;
+        display: flex;
+        color: black;
+        font-weight: 700;
+        font-size: 1em;
+        padding: 0.5em 1em; 
+        border-radius: 5px;
+        width: 100%; 
+        height: 50%; 
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .a-header{
+        display: none;
+    }
+    .titulo-card{
+        margin-top: 7%;
+    }
+    .card{
+        width: 100% !important;
+    }
+    .content-cards{
+        flex-direction: column;
+        align-items: center; 
+        align-content: space-around;
+    }
+    
+    form, select {
+        width: 100%;
+    }
+    form, textarea{
+        width: 100%;
+    }
+    .footer{
+        flex-wrap: wrap;
+    }
+    .footer-contenedor-siguenos{
+        margin-bottom: 5%;
+    }
+    .overlay-carrito{
+        right: -250%;
+    }
+    .instrucciones{
+        font-size: large;
+    }
+}
+
+
+
+
+/*Ultimo agregado*/
+
+.section-iniciar-sesion{
+    background-color: #e7eee7;
+    height: 90h;        /*90 porque sino se rompia con el footer*/
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2), 10px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.icono-iniciar-sesion{
+    width: 12%;
+    height: 12%;
+    margin: 0;
+}
+.boton-registrarse{
+    height: 2rem;
+    margin-top: 8%;
+    background-color:  #cf3b3b;
+    box-shadow: 0 0 4px #5e0000;
+}
